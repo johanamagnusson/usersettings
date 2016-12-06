@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/andreas/Documents/AutonomousAgents/Project/booboo/Tests/Object_avoidance_test'
+let g:netrw_dirhist_2='/Users/andreas/Documents/AutonomousAgents/Project/booboo/Tests'
+let g:netrw_dirhist_3='/Users/andreas/Documents/AutonomousAgents/Project/booboo/Tests/Object_avoidance_test'
+let g:netrw_dirhist_4='/Users/andreas/.vim'
