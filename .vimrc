@@ -19,7 +19,9 @@
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%81v.\+/
 
+:command  '/\S\zs\s\+$'
+
 "Highlights trailing whitespace
-:set hlsearch
-highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
-match ExtraWhitespace /\S\zs\s\+$/
+":set hlsearch
+"highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
+"match ExtraWhitespace /\S\zs\s\+$/
