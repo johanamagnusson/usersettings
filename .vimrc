@@ -20,7 +20,7 @@
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%81v.\+/
 
-:command  '/\S\zs\s\+$'
+":command  '/\S\zs\s\+$'
 
 "Highlights trailing whitespace
 ":set hlsearch
@@ -39,3 +39,8 @@ match OverLength /\%81v.\+/
 :set statusline+=%l/%L   "cursor line/total lines
 :set statusline+=\ %P    "percent through file
 
+au InsertEnter * hi StatusLine guibg=Black guifg=Red  ctermbg=Black ctermfg=Red
+au InsertEnter * hi CursorLine guibg=Pink  guifg=Black cterm=inverse
+
+au InsertLeave * hi StatusLine guibg=Gray  guifg=Black ctermbg=Black ctermfg=White
+au InsertLeave * hi CursorLine guibg=Green guifg=Black cterm=bold ctermbg=NONE ctermfg=NONE
