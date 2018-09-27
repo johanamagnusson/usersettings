@@ -46,7 +46,7 @@ alias ls="ls --group-directories-first --color"
 alias python="python3"
 alias pycharm="~/Applications/pycharm-community-2016.1.4/bin/pycharm.sh"
 alias listports="/home/anma/dev/git/src/SW/SW0026-PC_Software/11-Trabus3Debugger/showDebug.py -l"
-alias trup="/home/andreas/dev/git/tools/gitTools/handleRepoListDef.py /home/andreas/dev/git/CFG.repoListDef"
+alias trup="python3.5 /home/andreas/dev/git/tools/gitTools/handleRepoListDef.py /home/andreas/dev/git/CFG.repoListDef"
 alias conlab="ssh andreas@192.168.11.20"
 alias lh="/home/anma/dev/git/home/andreas2/AutomatedTesting/runTests.py -lh"
 alias st="rsync -tr andreas@192.168.11.20:~/data/testdata/master ~/testdata &&
@@ -58,6 +58,7 @@ alias cds="cd /home/andreas/dev/git/src/SW/SW0026-PC_Software"
 alias gitsmu="git submodule update --recursive --init"
 alias flash="/home/andreas/dev/git/src/SW/SW0026-PC_Software/44-TextFlasherIII/tf3.py"
 alias tag="/home/andreas/dev/git/tools/gitTools/tagging/makeTag.py"
+alias grep="grep -rn -I"
 
 cpath() {
   realpath $1 | tr -d "\n" | xclip -selection CLIPBOARD
